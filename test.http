@@ -1,0 +1,24 @@
+
+GET http://localhost:3000
+######
+
+GET http://localhost:3000/posts
+######
+
+POST http://localhost:3000/createposts
+Content-Type: application/json
+
+{
+    "title": "top beaches in florida",
+    "content": "successfully created posts",
+    "published": false,
+    "rating": 4
+    
+}
+######
+
+GET http://localhost:3000/posts/5
+######
+
+# GET http://localhost:3000/posts/latest
+# ######
