@@ -5,7 +5,7 @@ GET http://localhost:3000
 GET http://localhost:3000/posts
 ######
 
-POST http://localhost:3000/createposts
+POST http://localhost:3000/posts
 Content-Type: application/json
 
 {
@@ -22,3 +22,14 @@ GET http://localhost:3000/posts/5
 
 # GET http://localhost:3000/posts/latest
 # ######
+
+DELETE  http://localhost:3000/posts/1
+######
+
+PUT http://localhost:3000/posts/1
+Content-Type: application/json
+
+{
+    "title": "Edited Title",
+    "content": "Edited Content"
+}
